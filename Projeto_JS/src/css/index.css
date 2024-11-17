@@ -4,14 +4,18 @@
   list-style: none;
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  max-width: 1000px; 
+   
 }
 body {
-      scroll-behavior: smooth;
-      background-color:#34a2c7;
+  animation: gradient 10s ease alternate infinite;
+  scroll-behavior: smooth;
+  background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab) no-repeat;
+
+     
 }
 .container_header{
   display: flex;
+  width: 100vw;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -32,6 +36,7 @@ box-shadow: inset -4px 4px 10px #549338,
   font-size: 1.5rem;
   letter-spacing: 5px;
   padding: 10px;
+  
   
    
 }
@@ -66,6 +71,7 @@ box-shadow:  -8px -8px 10px #549338,
   align-items: center;
   flex-wrap: wrap;
    height: 630px;
+     width: 100vw;
   
   
 }
@@ -100,6 +106,7 @@ box-shadow:  -8px -8px 10px #549338,
   margin: 0 auto;
   padding: 30px;
 }
+ 
 .card1 {
   display:flex;
   flex-direction: column;
@@ -115,9 +122,13 @@ box-shadow:  -8px -8px 10px #549338,
   background: linear-gradient(145deg, #395d90, #35f2b3);
   box-shadow:  2px 2px 6px #4c973c,
              -2px -2px 6px #b82035;
+                     
             
 }
+
+
 .card1:hover {
+
   border-radius: 30px;
   background: linear-gradient(145deg, #395d90, #2566a8);
   box-shadow:  20px 20px 60px #4c973c,
@@ -153,6 +164,15 @@ box-shadow:  -8px -8px 10px #549338,
 }
 .button-3D:focus {
   outline: none;
+}
+@keyframes gradient {
+  from {
+   background-position: 0 50%;
+  }
+  to {
+   background-position: 100% 50%;
+  }
+ 
 }
 
 
