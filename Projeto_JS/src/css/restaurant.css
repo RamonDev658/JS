@@ -1,0 +1,28 @@
+body {
+    background-color: darksalmon;
+    
+}
+.container {
+    border: 10px solid black;
+    display: grid;
+    grid-template-areas: "header1 header1"
+                        "img img"
+                        "promo promo";
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header1 {
+    margin: 0 auto;
+}
+.promo {
+    grid-area: content;
+    width: 100%;
+    margin: 0 auto;
+}
+.img {
+    grid-area: img;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+
+}
