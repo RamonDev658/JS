@@ -25,9 +25,9 @@ body {
   margin-top: 5px;
   background-color: rgb(39, 152, 114);
   border-radius: 50px;
-background: #d0ff14;
-box-shadow: inset -4px 4px 10px #549338,
-            inset 4px 48px 10px #7edd54;
+background: #6A82FB;
+box-shadow: inset -4px 4px 10px #FC5C7D,
+            inset 4px 48px 10px #6A82FB;
 }
 .menu {
   display:flex;
@@ -76,8 +76,22 @@ box-shadow:  -8px -8px 10px #549338,
   
 }
 .container_main>:nth-child(1) {
-  font-size: 4.8rem;
-  width: 450px;
+  font-size: 3.4rem;
+  width: 400px;
+  overflow: hidden;
+  border-right: .05em solid orangered;
+  white-space: wrap;
+  letter-spacing: .15em;
+  animation: typing 2s steps(30, end), 
+  blink-caret .75s  infinite;
+}
+@keyframes typing {
+  from {width: 0}
+  to   {width: 30%}
+}
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+  50% {border-color: rgb(11, 21, 161)}
 }
 .container_main>:nth-child(2) {
   margin-top: 60px;

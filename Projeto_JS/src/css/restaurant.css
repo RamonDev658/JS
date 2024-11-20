@@ -24,8 +24,10 @@ body {
     font-weight: 400;
     font-style: normal;
     height: 50px;
-    
       
+}
+.fa-brands {
+    margin: 0 30px;
 }
 .container {
     display: flex;
