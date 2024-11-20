@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaFlavor Restaurant</title>
     <link rel="stylesheet" href="/Projeto_JS/src/css/restaurant.css">
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/107a64dc97.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
-    <h1 class="header1">JavaFlavor Restaurant</h1><hr>
+    <h1 class="header">JavaFlavor Restaurant</h1>
     <div class="container">
        
         <div class="content">
-            <div class="promo">
-                <h6>Forneça as informações de consumo do cliente e saiba o valor a ser pago.</h6>
+               <h6>Forneça as informações de consumo do cliente e saiba o valor a ser pago.</h6>
                 <p>Buffet por Quilo R$: <input type="text" placeholder="Insira o valor" id="inQuilo"> </p>
                 <p> Consumo do Cliente (gr):   <input type="text" placeholder="Insira a quantidade" id="inConsumo" > </p>
                 <p><input type="button" class="button-3D" value="Calcular Preço" id="btCalcular"></p>
                 <h3 id="outValor"></h3>
-               
-                <a href="/Projeto_JS/src/index.html"><input type="button"  class="button-3D" width="150px" value="Voltar"></a>
-            </div>
-            
+                <a href="/Projeto_JS/src/index.html"><i class="fa-solid fa-circle-arrow-left">VOLTAR</i></a>
         </div>
-        <div class="img" ><img  src="/Projeto_JS/src/img/food_image.jpg" alt=""></div>
+        <img  src="/Projeto_JS/src/img/food_image.jpg" alt="">
     </div>
     <script src="/Projeto_JS/src/js/restaurant.js"></script> 
 </body>
